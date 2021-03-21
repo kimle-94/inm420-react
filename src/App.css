@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -34,5 +34,81 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+#navbarSupportedContent > ul.navbar-nav {
+  width: 100%;
+  justify-content: center;
+}
+
+main {
+  text-align: center;
+  margin-top: 15vh;
+}
+
+main .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+main .contact-info a {
+  text-decoration: none;
+  color: #212529;
+}
+
+main .contact-info a:hover {
+  color: #0d6efd;
+}
+
+main p.detail {
+  width: 350px;
+  margin: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 100vw;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 1.3em;
+  }
+  main {
+    margin-top: 20vh;
+  }
+
+  main .contact-info {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  main p.detail {
+    width: 500px;
+  }
+
+  .App-logo {
+    height: 35vmin;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.5rem;
+  }
+  main {
+    margin-top: 25vh;
+  }
+
+  main p.detail {
+    width: 100%;
+  }
+
+  .App-logo {
+    height: 40vmin;
   }
 }
