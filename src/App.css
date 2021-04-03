@@ -45,6 +45,7 @@
 main {
   text-align: center;
   margin-top: 15vh;
+  position: relative;
 }
 
 main .contact-info {
